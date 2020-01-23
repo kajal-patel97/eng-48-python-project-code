@@ -50,7 +50,7 @@ class TestCSVGenerator:
                 list_count += 1
 
 
-        assert list_count == 60
+        assert list_count == 30
 
 
     def test_csv_with_headers(self):
@@ -60,7 +60,7 @@ class TestCSVGenerator:
             for line in parsed_csv_file:
                 list_count += 1
 
-        assert list_count == 62
+        assert list_count == 31
 
     def test_csv_without_headers_default_location(self):
         list_count = 0
@@ -69,4 +69,4 @@ class TestCSVGenerator:
             for line in parsed_csv_file:
                 list_count += 1
 
-        assert list_count == 60
+        assert list_count == 30
